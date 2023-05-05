@@ -123,10 +123,6 @@ def postprocess(frame, outs):
         height = box[3]
         drawPred(classIds[i], confidences[i], left, top, left + width, top + height)
 
-# Process inputs
-winName = 'Deep learning object detection in OpenCV'
-cv.namedWindow(winName, cv.WINDOW_NORMAL)
-
 outputFile = "yolo_out_py.avi"
 if (args.image):
     # Open the image file
